@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All albums</title>
+</head>
+
+<body>
+  <h1>Albums</h1>
+  <ul th:each="album: ${albums}">
+    <li th:text="${album.title} + ' by ' + ${album.artist}"></li>
+  </ul>
+
+  <form action="#" th:action="@{/templates/albumForm}" method="post" th:object="${album}">
+    <input type="text" id="artist" name="artist" th:field="*{artist}" placeholder="Artist">
+    <input type="text" id="title" name="title" th:field="*{title}" placeholder="Album title">
+    <button type="submit">Send</button>
+  </form>
+</body>
+
+</html>
