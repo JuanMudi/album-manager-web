@@ -16,7 +16,7 @@ spec:
       imagePullSecrets:
          - name: github-secret
       containers:
-         - name: grupo_1_1
+         - name: grupo-1-1
            image: localhost:5000/grupo_1_1:latest
            ports:
               - containerPort: 8080
