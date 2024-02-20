@@ -24,7 +24,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: grupo_1_1
+  name: grupo-1-1
   namespace: thymeleaf
 spec:
 #  type: NodePort
