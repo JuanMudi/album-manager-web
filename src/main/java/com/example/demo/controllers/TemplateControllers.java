@@ -12,7 +12,7 @@ import com.example.demo.model.Album;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
-@RequestMapping("/templates")
+@RequestMapping("/grupo-1-1/templates")
 public class TemplateControllers {
 
   @GetMapping("/album")
