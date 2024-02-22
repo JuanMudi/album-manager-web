@@ -46,7 +46,7 @@ public class TemplateControllers {
   @PostMapping("/albumForm")
   public String saveNewAlbum(@ModelAttribute Album album) {
     albumRepository.save(album);
-    return "redirect:/templates/all-albums";
+    return "redirect:/grupo-1-1/templates/all-albums";
   }
 
 }
