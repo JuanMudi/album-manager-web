@@ -13,7 +13,7 @@
     <li th:text="${album.title} + ' by ' + ${album.artist}"></li>
   </ul>
 
-  <form action="#" th:action="@{/templates/albumForm}" method="post" th:object="${album}">
+  <form action="#" th:action="@{/grupo-1-1/templates/albumForm}" method="post" th:object="${album}">
     <input type="text" id="artist" name="artist" th:field="*{artist}" placeholder="Artist">
     <input type="text" id="title" name="title" th:field="*{title}" placeholder="Album title">
     <button type="submit">Send</button>
